@@ -1,0 +1,51 @@
+<div class="content" role="main">
+
+  <!-- Highlight Card -->
+  <div class="highlight-card">
+    <span id="title">Search News</span>
+  </div>
+  <br>
+  <br>
+  <br>
+    <input #searchBox id="search-box" [(ngModel)]="keyword"/>
+    <br>
+    <br>
+    <br>
+    <div class="grid grid-pad">
+      <a class="col-1-4" routerLink="/result">
+        <div class="module">
+          <h4>Go!</h4>
+        </div>
+      </a>
+    </div> 
+    <!-- <button class="grid grid-pad col-1-4" (click)="showSpinner">
+      Go!
+    </button> -->
+  <br>
+  <!-- Resources -->
+  <h2>Feeling Lucky?</h2>
+  <p>Here are some important events right now: </p>
+
+  <div class="card-container">
+    <a class="card" routerLink="/result/climate">
+
+      <span>Climate Change</span>
+
+      <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"/></svg>    </a>
+
+    <a class="card" routerLink="/result/impeachment">
+
+      <span>Trump Impeachment</span>
+
+      <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"/></svg>
+    </a>
+
+    <a class="card" routerLink="/result/hongkong">
+      
+      <span>Hong Kong Protests</span>
+
+      <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"/></svg>
+    </a>
+
+  </div>
+  <ngx-spinner></ngx-spinner>
