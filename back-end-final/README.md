@@ -1,3 +1,3 @@
-#Python Backend - Text Summarizer
+# Python Backend - Text Summarizer
 
-Run python new-extractor.py in Anaconda
+Run python news_extractor.py in Anaconda
